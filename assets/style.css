@@ -1,0 +1,97 @@
+/* assets/style.css — Global dark theme overrides */
+
+/* ── Root background ── */
+.stApp {
+    background-color: #0f0f23;
+}
+
+/* ── Sidebar ── */
+section[data-testid="stSidebar"] {
+    background-color: #1a1a2e;
+    border-right: 1px solid #2a2a4a;
+}
+
+section[data-testid="stSidebar"] * {
+    color: #ccccee !important;
+}
+
+/* ── Tab bar ── */
+.stTabs [data-baseweb="tab-list"] {
+    background-color: #1a1a2e;
+    border-radius: 10px;
+    padding: 4px;
+    gap: 4px;
+    border: 1px solid #2a2a4a;
+}
+
+.stTabs [data-baseweb="tab"] {
+    background-color: transparent;
+    color: #8888aa;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    padding: 8px 20px;
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: #2a2a4a !important;
+    color: #ffffff !important;
+}
+
+/* ── Metric widget ── */
+div[data-testid="metric-container"] {
+    background-color: #1a1a2e;
+    border: 1px solid #2a2a4a;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+/* ── Buttons ── */
+.stDownloadButton > button {
+    background-color: #2a2a4a;
+    color: #ccccee;
+    border: 1px solid #3a3a6a;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.stDownloadButton > button:hover {
+    background-color: #3a3a6a;
+    color: #ffffff;
+    border-color: #5a5a9a;
+}
+
+/* ── Inputs ── */
+.stTextInput > div > input,
+.stSelectbox > div > div {
+    background-color: #1a1a2e !important;
+    color: #ccccee !important;
+    border: 1px solid #2a2a4a !important;
+    border-radius: 8px !important;
+}
+
+/* ── Dataframe ── */
+.stDataFrame {
+    border: 1px solid #2a2a4a;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* ── Divider ── */
+hr {
+    border-color: #2a2a4a !important;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #1a1a2e; }
+::-webkit-scrollbar-thumb { background: #3a3a6a; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #5a5a9a; }
+
+/* ── Hide Streamlit branding ── */
+#MainMenu { visibility: hidden; }
+footer    { visibility: hidden; }
+header {
+    background: transparent;
+}
