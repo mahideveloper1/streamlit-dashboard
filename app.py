@@ -4,7 +4,6 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 from datetime import datetime
-from streamlit_autorefresh import st_autorefresh
 
 from config import (
     APP_TITLE, REFRESH_INTERVAL_MS, HISTORY_POINTS,
@@ -45,7 +44,6 @@ load_css()
 # ─────────────────────────────────────────────
 #  AUTO REFRESH
 # ─────────────────────────────────────────────
-st_autorefresh(interval=REFRESH_INTERVAL_MS, key="aqi_refresh")
 
 # ─────────────────────────────────────────────
 #  SESSION STATE — History buffer
